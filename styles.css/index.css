@@ -1,0 +1,327 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------NAVBAR-------------------------------------*/
+.navbar {
+    background-color: #1b1b32;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.brand-p{
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+}
+
+.nav-item .nav-link:hover {
+    color: rgb(154, 154, 154);
+}
+
+.nav-item i {
+    font-size: 1.5rem;
+    color: #aeaeae;
+    margin-left: 25px;
+}
+
+.nav-item i:hover {
+    color: #6d6d6d;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+/*-----------------------HERO-------------------------------------*/
+
+.hero {
+    min-height: 680px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.hero-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.img-hero{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    object-fit: cover;
+    border: 6px solid #000;
+}
+
+.hero-principal h1{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.hero-inferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------ABOUT ME-------------------------------------*/
+
+.section-dark{
+    background-color: #1b1b32;
+    color: white;
+}
+
+.about-me{
+    height: 500px;
+    padding: 10px;
+}
+
+.about-me .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.section-text{
+    font-size: 1.2rem;
+}
+
+/*-----------------------PROYECTOS-------------------------------------*/
+
+
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.proyectos-recientes img{
+    object-fit: fill;
+    height: 250px;
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.proyecto:hover{
+    transform: scale(1.03);
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.proyecto {
+    border: 1.8px solid #aeaeae;
+    border-radius: 15px;
+    background-color:aliceblue;
+}
+
+.proyecto-about {
+    word-wrap: break-word;
+    min-height: 210px;
+    width: 100%;
+}
+
+.overlay i {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.fa-brands {
+    font-size: 25px;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+}
+
+.proyecto-about p {
+    font-size: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.proyecto-about b {
+    font-size: 20px;
+}
+
+.iconos-contenedor i {
+    color: #2e2e64;
+    font-size: 40px;
+    margin: 10px;
+    transition: all 0.2s ease;
+}
+
+.iconos-contenedor .bi:hover {
+    color: #5c5ca0;
+}
+
+.iconos-proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+
+/*-----------------------TECNOLOGIAS-------------------------------------*/
+
+.tecnologias {
+    padding: 40px 40px 100px 40px;
+}
+
+.tecnologias .section-title{
+    padding-bottom: 100px;
+}
+
+.contenedor-skill {
+    padding: 10px;
+    max-width: 500px;
+}
+
+.contenedor-skill:hover {
+    transform: scale(1.05);
+}
+
+.texto-tecnologia {
+    padding-left: 10px;
+    margin: 0;
+}
+
+.contenedor-tecnologia {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 95%;
+    background-color:#333353;
+}
+
+
+/*-----------------------FOOTER-------------------------------------*/
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 3px;
+}
+
+.iconos-redes a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes a:hover {
+    background-color: #fff;
+    border: 2px solid rgb(13,110,253);
+}
+
+.iconos-redes a:hover i{
+    color: #000;
+}
+
+.autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/*-----------------------QUERYS-------------------------------------*/
+
+@media screen and (max-width: 400px){
+    .overlay p{
+        font-size: 15px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+  
+}
+
+@media screen and (max-width: 767px){
+    .navbar-brand {
+        display: none;
+    }
+
+    .proyectos-recientes {
+        padding: 15px;
+    }
+
+    .proyectos-contenedor {
+        padding-top: 20px;
+    }
+
+    .proyecto {
+        margin-bottom: 15px;
+    }
+
+    .proyecto img {
+        object-fit:cover;
+    }
+
+    .tecnologias .section-title{
+        padding-bottom: 50px;
+    }
+
+    .hero-img {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen {
+        width: 600px;
+    }
+}
+

@@ -298,10 +298,6 @@ section {
         padding: 15px;
     }
 
-    .section-text {
-        text-align: center;
-    }
-
     .proyectos-contenedor {
         padding-top: 20px;
     }
@@ -320,10 +316,6 @@ section {
 
     .hero-img {
         flex-direction: column;
-    }
-
-    .nav-item i {
-        margin: 0;
     }
 }
 

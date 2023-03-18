@@ -76,15 +76,17 @@ section {
     border: 6px solid #000;
 }
 
-.hero-principal h1{
-    font-family: 'Abril Fatface', cursive;
-}
-
 .hero-inferior{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.hero-principal h1{
+    font-family: 'Abril Fatface', cursive;
+}
+
+
 
 /*-----------------------ABOUT ME-------------------------------------*/
 

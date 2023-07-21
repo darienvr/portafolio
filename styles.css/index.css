@@ -333,6 +333,10 @@ section {
     .section-text {
         text-align: center;
     }
+
+    .nav-logo {
+        gap: 15px;
+    }
 }
 
 @media screen and (min-width: 700px){

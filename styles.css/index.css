@@ -168,11 +168,23 @@ section {
     margin: 10px;
 }
 
-.fa-brands {
-    font-size: 25px;
+.iconos-tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
 }
 
-.fa-brands:hover {
+.fa-brands {
+    font-size: 25px;
+    padding-left: 3px;
+}
+
+.bx {
+    font-size: 30px;
+}
+
+.fa-brands:hover, .bx:hover{
     transform: scale(1.2);
 }
 

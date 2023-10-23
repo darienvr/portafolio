@@ -185,6 +185,12 @@ section {
     font-size: 30px;
 }
 
+.bx2 {
+    font-size: 30px;
+    position: relative;
+    bottom: -3px;
+}
+
 .fa-brands:hover, .bx:hover{
     transform: scale(1.2);
 }

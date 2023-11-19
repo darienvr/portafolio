@@ -19,31 +19,33 @@
   </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler navbar-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbar-toggler">
+          <div class="collapse navbar-collapse navbar-container" id="navbar-toggler">
             <a class="navbar-brand" href="#"><b class="brand-p">DV</b></a>
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center gap-3">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about-me">Sobre mí</a>
+                <a class="nav-link" style="color: white" aria-current="page" href="#about-me" onclick="scrollToSection(event)">Sobre mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#proyectos-recientes">Proyectos</a>
+                <a class="nav-link" style="color: white" href="#proyectos-recientes" onclick="scrollToSection(event)">Proyectos</a>
               </li>
               <li class="nav-item">  
-                <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                <a class="nav-link" style="color: white" href="#tecnologias" onclick="scrollToSection(event)">Tecnologias</a>
               </li>
-              <li class="nav-item d-flex nav-logo">
-                <a class="nav-link" href="https://github.com/darienvr" target="_blank" rel="noopener noreferrer">
+            </ul>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item d-flex gap-3">
+                <a class="nav-logo" href="https://github.com/darienvr" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-github"></i>
                 </a>
-                <a class="nav-link" href="https://www.linkedin.com/in/darien-villanueva-0b8636262/" target="_blank" rel="noopener noreferrer">
+                <a class="nav-logo" href="https://www.linkedin.com/in/darien-villanueva-0b8636262/" target="_blank" rel="noopener noreferrer">
                   <i class="bi bi-linkedin"></i>
                 </a>
-              </li>
+              </li>  
             </ul>
           </div>
         </div>
@@ -67,7 +69,19 @@
     <section id="about-me" class="about-me section-dark">
       <div class="contenedor">
         <h2 class="section-title">Conóceme</h2>
-        <p class="section-text">Mi nombre es Darien, soy desarrollador frontend con <b>React</b>, actualmente cursando el último ciclo de la carrera de Ingenieria de Sistemas y aprendiendo de manera autodidacta nuevas tecnologias y/o herramientas relacionadas al mundo de la programación. <i class="fa-regular fa-face-smile"></i></p>
+        <div class="d-flex gap-3 mb-4">
+          <div class="about-info">
+            <i class="fa-solid fa-school"></i>
+            <h3 class="fs-4">Educacion</h3>
+            <h5 class="fs-6">Universidad Nacional Mayor de San Marcos</h5>
+          </div>
+          <div class="about-info">
+            <i class="fa-solid fa-star"></i>
+            <h3 class="fs-4">Experiencia</h3>
+            <h5 class="fs-6">Frontend: 2 años </br> Backend: 1 año</h5>
+          </div>
+        </div>
+        <p class="section-text">Mi nombre es Darien, soy desarrollador frontend con <b>React</b>, actualmente cursando el último ciclo de la carrera de Ingeniería de Sistemas y aprendiendo de manera autodidacta nuevas tecnologias y herramientas relacionadas al mundo de la programación. 😊</p>
       </div>
     </section>
 
@@ -157,7 +171,7 @@
         </div>
         <div class="container mt-5">
           <a href="https://github.com/darienvr?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <button class="btn btn-secondary">Ver mas Proyectos</button>
+            <button class="btn btn-warning">Ver mas Proyectos</button>
           </a>
         </div>
       </div>
@@ -166,8 +180,9 @@
     <!--TECNOLOGIAS-->
     <section  id="tecnologias" class="tecnologias section-dark d-flex flex-column aling-items-center">
       <h2 class="section-title">Tecnologias</h2>
-      <div class="container">
+      <div class="container col-8">
         <div class="row">
+          <!--
           <div class="col-12 col-md-6 d-flex contenedor-skill">
               <div class="contenedor-tecnologia d-flex">
                 <i class="bi bi-check-circle-fill text-success"></i>
@@ -228,6 +243,72 @@
               <p class="texto-tecnologia">TypeScript</p>
             </div>
           </div>
+        -->
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/html.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/css.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/js.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/react.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/ts.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/php.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/laravel.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/mysql.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/node.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/native.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/figma.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-6 d-flex contenedor-logo-skill justify-content-center">
+            <div class="d-flex">
+              <img src="./img/logo/git.png" alt="">
+            </div>
+          </div>
+        
+         
+         
+          </div>
+
         </div>
       </div>
     </section>  
@@ -251,5 +332,30 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b4f3addca4.js" crossorigin="anonymous"></script>
+    <script>
+      window.onload = function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+          link.addEventListener('click', function(event) {
+            event.preventDefault();
+          });
+        });
+      };
+
+      function scrollToSection(event) {
+        event.preventDefault();
+        const offset = 50;
+        const targetId = event.target.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+          const targetPosition = target.offsetTop - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    </script>
   </body>
 </html>

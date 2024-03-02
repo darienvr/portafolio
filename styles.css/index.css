@@ -64,6 +64,7 @@ section {
 .nav-link {
     display: inline-block;
 	position: relative;
+    height: 35px;
 }
 
 .nav-link::after {

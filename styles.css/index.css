@@ -55,6 +55,10 @@ section {
     color: #6d6d6d;
 }
 
+.navbar-toggler-btn {
+    display: none;
+}
+
 .navbar-toggler-icon {
     background-color: #fff;
     border-radius: 5px;
@@ -372,6 +376,18 @@ section {
 
 @media screen and (max-width: 767px){
 
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar-toggler-btn {
+        display: contents;
+        border-radius: 5px;
+        padding: 1px;
+    }
+
     .navbar-brand {
         display: none;
     }
@@ -452,4 +468,6 @@ section {
         object-fit: contain;
     }
 }
+
+
 

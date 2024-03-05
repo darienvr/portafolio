@@ -290,6 +290,12 @@
           });
         }
       }
+
+      document.querySelectorAll('.navbar-nav a').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelector('.navbar-collapse').classList.remove('show');
+  });
+});
     </script>
   </body>
 </html>
